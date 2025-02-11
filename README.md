@@ -10,7 +10,7 @@ node generate.js
 
 ### Available ENVs
 
-* `MAX_FILE_SIZE_MB` - Maximum file size, defaults to 10mb
+* `MAX_FILE_SIZE_MB` - Maximum file size in MB, defaults to 10
 * `MAX_INTEGER` - Maximum integer, defaults to JS max safe number
 * `OUTPUT_FILE` - Output filename and path, defaults to `input`
 * `MAX_STRING_LENGTH` - Maximum length of string, defaults 64
@@ -32,7 +32,7 @@ node read.js
 
 ### Build
 
-Docker build only includes `read.js`. Generating the file is not included.
+Docker build only includes `read.js`. Generating input file is not included.
 
 ```
 docker build -t <imagename>:<tagname> .
